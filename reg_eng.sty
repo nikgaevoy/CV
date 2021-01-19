@@ -1,0 +1,63 @@
+%%%%%%%%%%%%%%%%%%%%
+%% Basic needs of a LaTeX-er
+%%%%%%%%%%%%%%%%%%%%
+
+\RequirePackage{amsmath,amssymb,amsthm,mathtools}
+\RequirePackage{graphicx,caption,subcaption,makecell}
+\RequirePackage{titletoc,tocloft,hyperref,fancyhdr}
+\RequirePackage{enumerate,enumitem,indentfirst,euscript}
+\RequirePackage{alphalph,algorithm}
+\RequirePackage[noend]{algpseudocode}
+\RequirePackage[backend=biber,style=alphabetic]{biblatex}
+\RequirePackage{comment}
+
+%% Order is important
+\RequirePackage[small]{complexity}
+\hypersetup{unicode=true}
+
+\RequirePackage[utf8]{inputenc}
+\RequirePackage{cmap}
+\RequirePackage[T2A]{fontenc}
+\RequirePackage{csquotes}
+\RequirePackage[english]{babel}
+\RequirePackage{xspace}
+
+%%%%%%%%%%%%%%%%%%%%
+%% Standing still mathematical
+%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\bq}{{\mathbb Q}}
+\newcommand{\br}{{\mathbb R}}
+\newcommand{\bc}{{\mathbb C}}
+\newcommand{\bn}{{\mathbb N}}
+\newcommand{\bz}{{\mathbb Z}}
+
+%%%%%%%%%%%%%%%%%%%%
+%% Theorems and statements
+%%%%%%%%%%%%%%%%%%%%
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{proposition}[theorem]{Proposition}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Определение}
+
+%%%%%%%%%%%%%%%%%%%%
+%% Paired delimiters: sets, maps, etc.
+%%%%%%%%%%%%%%%%%%%%
+
+\DeclarePairedDelimiter\set{\lbrace}{\rbrace}
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+\DeclarePairedDelimiter\segment{[}{]}
+\DeclarePairedDelimiter\parens{(}{)}
+
+\DeclarePairedDelimiterX{\map}[2]{\lbrace}{\rbrace}{#1 \,\delimsize\vert\,\mathopen{} #2}
+\newcommand{\BigO}{\mathcal{O}}
+\newcommand{\SmallO}{o}
+
+\newcommand{\eps}{\varepsilon}
